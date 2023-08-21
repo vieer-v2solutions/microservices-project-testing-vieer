@@ -1,0 +1,1 @@
+This is a microservice project for sole purpose only.
