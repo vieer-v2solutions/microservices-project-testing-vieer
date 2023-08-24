@@ -1,0 +1,313 @@
+2023-08-24T12:33:25.289+05:30  INFO 23188 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 23188 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T12:33:25.296+05:30  INFO 23188 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T12:33:26.765+05:30  INFO 23188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T12:33:26.954+05:30  INFO 23188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interfaces.
+2023-08-24T12:33:28.592+05:30  INFO 23188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T12:33:28.619+05:30  INFO 23188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T12:33:28.622+05:30  INFO 23188 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T12:33:28.930+05:30  INFO 23188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T12:33:28.931+05:30  INFO 23188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3509 ms
+2023-08-24T12:33:29.367+05:30  INFO 23188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T12:33:29.544+05:30  INFO 23188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T12:33:29.550+05:30  INFO 23188 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T12:33:29.845+05:30  INFO 23188 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T12:33:30.081+05:30  INFO 23188 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T12:33:30.110+05:30  INFO 23188 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T12:33:30.652+05:30  INFO 23188 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@790ac3e0
+2023-08-24T12:33:30.656+05:30  INFO 23188 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T12:33:30.773+05:30  WARN 23188 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T12:33:31.328+05:30  INFO 23188 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T12:33:32.639+05:30  INFO 23188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T12:33:32.733+05:30  INFO 23188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T12:33:33.248+05:30  WARN 23188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T12:33:33.954+05:30  INFO 23188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T12:33:33.973+05:30  INFO 23188 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 9.417 seconds (process running for 10.126)
+2023-08-24T12:33:42.720+05:30  INFO 23188 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T12:33:42.721+05:30  INFO 23188 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T12:33:42.724+05:30  INFO 23188 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-24T12:33:42.799+05:30  INFO 23188 --- [http-nio-8081-exec-1] c.m.u.controller.Controller              : User found at ID: 2
+2023-08-24T12:33:46.666+05:30  INFO 23188 --- [http-nio-8081-exec-2] c.m.u.controller.Controller              : User found at ID: 4
+2023-08-24T12:33:48.172+05:30  INFO 23188 --- [http-nio-8081-exec-3] c.m.u.controller.Controller              : User found at ID: 4
+2023-08-24T12:33:50.318+05:30  INFO 23188 --- [http-nio-8081-exec-4] c.m.u.controller.Controller              : User found at ID: 0
+2023-08-24T12:33:50.328+05:30 ERROR 23188 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.mpv2.userMicroservice.exception.ResourceNotFoundException: User Not found on server with id: 0] with root cause
+
+com.mpv2.userMicroservice.exception.ResourceNotFoundException: User Not found on server with id: 0
+	at com.mpv2.userMicroservice.service.UserServiceImplementation.lambda$0(UserServiceImplementation.java:30) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.mpv2.userMicroservice.service.UserServiceImplementation.getUser(UserServiceImplementation.java:30) ~[classes/:na]
+	at com.mpv2.userMicroservice.controller.Controller.getUserById(Controller.java:45) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.11.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.11.jar:10.1.11]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-08-24T12:33:55.574+05:30  INFO 23188 --- [http-nio-8081-exec-5] c.m.u.controller.Controller              : Got all users
+2023-08-24T16:59:52.749+05:30  INFO 19100 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 19100 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T16:59:52.753+05:30  INFO 19100 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T16:59:54.082+05:30  INFO 19100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T16:59:54.225+05:30  INFO 19100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interfaces.
+2023-08-24T16:59:55.535+05:30  INFO 19100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T16:59:55.558+05:30  INFO 19100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T16:59:55.559+05:30  INFO 19100 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T16:59:55.777+05:30  INFO 19100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T16:59:55.779+05:30  INFO 19100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2898 ms
+2023-08-24T16:59:56.212+05:30  INFO 19100 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T16:59:56.397+05:30  INFO 19100 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T16:59:56.405+05:30  INFO 19100 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T16:59:56.849+05:30  INFO 19100 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T16:59:57.268+05:30  INFO 19100 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T16:59:57.305+05:30  INFO 19100 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T16:59:57.949+05:30  INFO 19100 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@790ac3e0
+2023-08-24T16:59:57.954+05:30  INFO 19100 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T16:59:58.086+05:30  WARN 19100 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T16:59:58.820+05:30  INFO 19100 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:00:00.995+05:30  INFO 19100 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:00:01.105+05:30  INFO 19100 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:00:01.133+05:30  WARN 19100 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'controller': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userServiceImplementation': Unsatisfied dependency expressed through field 'restTemplate': No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-08-24T17:00:01.136+05:30  INFO 19100 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:00:01.141+05:30  INFO 19100 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown initiated...
+2023-08-24T17:00:01.160+05:30  INFO 19100 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown completed.
+2023-08-24T17:00:01.168+05:30  INFO 19100 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-24T17:00:01.193+05:30  INFO 19100 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-08-24T17:00:01.253+05:30 ERROR 19100 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.mpv2.userMicroservice.service.UserServiceImplementation required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2023-08-24T17:33:41.865+05:30  INFO 928 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 928 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T17:33:41.870+05:30  INFO 928 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T17:33:43.072+05:30  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T17:33:43.198+05:30  INFO 928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interfaces.
+2023-08-24T17:33:44.418+05:30  INFO 928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T17:33:44.437+05:30  INFO 928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T17:33:44.438+05:30  INFO 928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T17:33:44.643+05:30  INFO 928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T17:33:44.644+05:30  INFO 928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2640 ms
+2023-08-24T17:33:45.004+05:30  INFO 928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T17:33:45.143+05:30  INFO 928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T17:33:45.149+05:30  INFO 928 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T17:33:45.494+05:30  INFO 928 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:33:45.735+05:30  INFO 928 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T17:33:45.772+05:30  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T17:33:46.517+05:30  INFO 928 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@4eeb14e0
+2023-08-24T17:33:46.523+05:30  INFO 928 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T17:33:46.694+05:30  WARN 928 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T17:33:47.256+05:30  INFO 928 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:33:48.404+05:30  INFO 928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:33:48.493+05:30  INFO 928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:33:49.027+05:30  WARN 928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T17:33:49.750+05:30  INFO 928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T17:33:49.769+05:30  INFO 928 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 8.941 seconds (process running for 9.48)
+2023-08-24T17:34:14.281+05:30  INFO 928 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T17:34:14.282+05:30  INFO 928 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T17:34:14.284+05:30  INFO 928 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-24T17:34:14.345+05:30  INFO 928 --- [http-nio-8081-exec-1] c.m.u.controller.Controller              : User found at ID: 1
+2023-08-24T17:34:14.528+05:30  INFO 928 --- [http-nio-8081-exec-1] c.m.u.service.UserServiceImplementation  : [{ratingId=1, userId=1, hotelId=1, rating=4, feedback=Good Interiors}]
+2023-08-24T17:34:40.453+05:30  INFO 928 --- [http-nio-8081-exec-3] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:34:40.466+05:30  INFO 928 --- [http-nio-8081-exec-3] c.m.u.service.UserServiceImplementation  : [{ratingId=1, userId=1, hotelId=1, rating=4, feedback=Good Interiors}]
+2023-08-24T17:35:14.880+05:30  INFO 928 --- [http-nio-8081-exec-4] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:35:14.893+05:30  INFO 928 --- [http-nio-8081-exec-4] c.m.u.service.UserServiceImplementation  : [{ratingId=1, userId=1, hotelId=1, rating=4, feedback=Good Interiors}]
+2023-08-24T17:35:29.064+05:30  INFO 928 --- [http-nio-8081-exec-5] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:35:29.077+05:30  INFO 928 --- [http-nio-8081-exec-5] c.m.u.service.UserServiceImplementation  : [{ratingId=1, userId=1, hotelId=1, rating=4, feedback=Good Interiors}]
+2023-08-24T17:35:45.625+05:30  INFO 928 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:35:45.631+05:30  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown initiated...
+2023-08-24T17:35:45.655+05:30  INFO 928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown completed.
+2023-08-24T17:35:52.616+05:30  INFO 21364 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 21364 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T17:35:52.624+05:30  INFO 21364 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T17:35:54.331+05:30  INFO 21364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T17:35:54.481+05:30  INFO 21364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 1 JPA repository interfaces.
+2023-08-24T17:35:56.477+05:30  INFO 21364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T17:35:56.500+05:30  INFO 21364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T17:35:56.501+05:30  INFO 21364 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T17:35:56.830+05:30  INFO 21364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T17:35:56.832+05:30  INFO 21364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4016 ms
+2023-08-24T17:35:57.372+05:30  INFO 21364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T17:35:57.552+05:30  INFO 21364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T17:35:57.558+05:30  INFO 21364 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T17:35:57.997+05:30  INFO 21364 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:35:58.418+05:30  INFO 21364 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T17:35:58.462+05:30  INFO 21364 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T17:35:59.241+05:30  INFO 21364 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@4eeb14e0
+2023-08-24T17:35:59.247+05:30  INFO 21364 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T17:35:59.379+05:30  WARN 21364 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T17:35:59.957+05:30  INFO 21364 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:36:01.515+05:30  INFO 21364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:36:01.648+05:30  INFO 21364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:36:02.568+05:30  WARN 21364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T17:36:03.271+05:30  INFO 21364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T17:36:03.289+05:30  INFO 21364 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 12.127 seconds (process running for 12.777)
+2023-08-24T17:36:16.630+05:30  INFO 21364 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T17:36:16.632+05:30  INFO 21364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T17:36:16.634+05:30  INFO 21364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-24T17:36:16.730+05:30  INFO 21364 --- [http-nio-8081-exec-1] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:36:16.905+05:30  INFO 21364 --- [http-nio-8081-exec-1] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:40:33.341+05:30  INFO 21364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:40:33.345+05:30  INFO 21364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown initiated...
+2023-08-24T17:40:33.355+05:30  INFO 21364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown completed.
+2023-08-24T17:40:36.261+05:30  INFO 17400 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 17400 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T17:40:36.269+05:30  INFO 17400 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T17:40:38.453+05:30  INFO 17400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T17:40:38.686+05:30  INFO 17400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206 ms. Found 1 JPA repository interfaces.
+2023-08-24T17:40:40.465+05:30  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T17:40:40.494+05:30  INFO 17400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T17:40:40.500+05:30  INFO 17400 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T17:40:40.903+05:30  INFO 17400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T17:40:40.905+05:30  INFO 17400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4425 ms
+2023-08-24T17:40:41.975+05:30  INFO 17400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T17:40:42.299+05:30  INFO 17400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T17:40:42.307+05:30  INFO 17400 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T17:40:42.903+05:30  INFO 17400 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:40:43.522+05:30  INFO 17400 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T17:40:43.578+05:30  INFO 17400 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T17:40:44.322+05:30  INFO 17400 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@4eeb14e0
+2023-08-24T17:40:44.328+05:30  INFO 17400 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T17:40:44.462+05:30  WARN 17400 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T17:40:44.981+05:30  INFO 17400 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:40:46.484+05:30  INFO 17400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:40:46.575+05:30  INFO 17400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:40:47.508+05:30  WARN 17400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T17:40:48.578+05:30  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T17:40:48.605+05:30  INFO 17400 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 13.138 seconds (process running for 13.831)
+2023-08-24T17:40:55.344+05:30  INFO 17400 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T17:40:55.345+05:30  INFO 17400 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T17:40:55.346+05:30  INFO 17400 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-24T17:40:55.406+05:30  INFO 17400 --- [http-nio-8081-exec-3] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:40:55.560+05:30  INFO 17400 --- [http-nio-8081-exec-3] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:41:10.098+05:30  INFO 17400 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:41:10.109+05:30  INFO 17400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown initiated...
+2023-08-24T17:41:10.132+05:30  INFO 17400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown completed.
+2023-08-24T17:41:17.961+05:30  INFO 14392 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 14392 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T17:41:17.970+05:30  INFO 14392 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T17:41:19.750+05:30  INFO 14392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T17:41:19.984+05:30  INFO 14392 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 1 JPA repository interfaces.
+2023-08-24T17:41:21.647+05:30  INFO 14392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T17:41:21.669+05:30  INFO 14392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T17:41:21.670+05:30  INFO 14392 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T17:41:21.944+05:30  INFO 14392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T17:41:21.946+05:30  INFO 14392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3796 ms
+2023-08-24T17:41:22.413+05:30  INFO 14392 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T17:41:22.656+05:30  INFO 14392 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T17:41:22.665+05:30  INFO 14392 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T17:41:23.037+05:30  INFO 14392 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:41:23.345+05:30  INFO 14392 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T17:41:23.394+05:30  INFO 14392 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T17:41:24.017+05:30  INFO 14392 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e98032e
+2023-08-24T17:41:24.021+05:30  INFO 14392 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T17:41:24.121+05:30  WARN 14392 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T17:41:24.625+05:30  INFO 14392 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:41:25.873+05:30  INFO 14392 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:41:25.956+05:30  INFO 14392 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:41:26.691+05:30  WARN 14392 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T17:41:27.683+05:30  INFO 14392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T17:41:27.721+05:30  INFO 14392 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 11.088 seconds (process running for 13.465)
+2023-08-24T17:41:43.949+05:30  INFO 14392 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T17:41:43.950+05:30  INFO 14392 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T17:41:43.953+05:30  INFO 14392 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-24T17:41:44.016+05:30  INFO 14392 --- [http-nio-8081-exec-1] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:41:44.194+05:30  INFO 14392 --- [http-nio-8081-exec-1] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:41:52.136+05:30  INFO 14392 --- [http-nio-8081-exec-2] c.m.u.controller.Controller              : User found at ID: 1
+2023-08-24T17:41:52.152+05:30  INFO 14392 --- [http-nio-8081-exec-2] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:42:07.669+05:30  INFO 14392 --- [http-nio-8081-exec-6] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:42:07.689+05:30  INFO 14392 --- [http-nio-8081-exec-6] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:43:09.258+05:30  INFO 14392 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:43:09.263+05:30  INFO 14392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown initiated...
+2023-08-24T17:43:09.281+05:30  INFO 14392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : microservices - Shutdown completed.
+2023-08-24T17:43:15.568+05:30  INFO 19224 --- [main] c.m.u.UserMicroserviceApplication        : Starting UserMicroserviceApplication using Java 20.0.2 with PID 19224 (C:\Users\suvam.behera\eclipse-workspace\Microservices Project\userMicroservice\userMicroservice\target\classes started by suvam.behera in C:\Users\suvam.behera\eclipse-workspace\Microservices Project)
+2023-08-24T17:43:15.573+05:30  INFO 19224 --- [main] c.m.u.UserMicroserviceApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-08-24T17:43:16.794+05:30  INFO 19224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24T17:43:16.955+05:30  INFO 19224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 1 JPA repository interfaces.
+2023-08-24T17:43:18.797+05:30  INFO 19224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-08-24T17:43:18.813+05:30  INFO 19224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-24T17:43:18.815+05:30  INFO 19224 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-24T17:43:19.030+05:30  INFO 19224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-24T17:43:19.032+05:30  INFO 19224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3332 ms
+2023-08-24T17:43:19.425+05:30  INFO 19224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24T17:43:19.569+05:30  INFO 19224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-24T17:43:19.573+05:30  INFO 19224 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-24T17:43:19.838+05:30  INFO 19224 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:43:20.136+05:30  INFO 19224 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-24T17:43:20.169+05:30  INFO 19224 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Starting...
+2023-08-24T17:43:20.725+05:30  INFO 19224 --- [main] com.zaxxer.hikari.pool.HikariPool        : microservices - Added connection com.mysql.cj.jdbc.ConnectionImpl@516195cf
+2023-08-24T17:43:20.729+05:30  INFO 19224 --- [main] com.zaxxer.hikari.HikariDataSource       : microservices - Start completed.
+2023-08-24T17:43:20.863+05:30  WARN 19224 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-24T17:43:21.406+05:30  INFO 19224 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-24T17:43:22.883+05:30  INFO 19224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24T17:43:22.977+05:30  INFO 19224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24T17:43:23.682+05:30  WARN 19224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-24T17:43:24.353+05:30  INFO 19224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-08-24T17:43:24.375+05:30  INFO 19224 --- [main] c.m.u.UserMicroserviceApplication        : Started UserMicroserviceApplication in 9.636 seconds (process running for 10.252)
+2023-08-24T17:43:31.460+05:30  INFO 19224 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-24T17:43:31.461+05:30  INFO 19224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-24T17:43:31.465+05:30  INFO 19224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-08-24T17:43:31.526+05:30  INFO 19224 --- [http-nio-8081-exec-1] c.m.u.controller.Controller              : User found at ID: 5
+2023-08-24T17:43:31.682+05:30  INFO 19224 --- [http-nio-8081-exec-1] c.m.u.service.UserServiceImplementation  : [{ratingId=3, userId=5, hotelId=1, rating=4, feedback=staff has good behavior}, {ratingId=4, userId=5, hotelId=2, rating=3, feedback=hospitality was not upto the mark}]
+2023-08-24T17:43:36.455+05:30  INFO 19224 --- [http-nio-8081-exec-2] c.m.u.controller.Controller              : User found at ID: 3
+2023-08-24T17:43:36.470+05:30  INFO 19224 --- [http-nio-8081-exec-2] c.m.u.service.UserServiceImplementation  : []
+2023-08-24T17:43:40.117+05:30  INFO 19224 --- [http-nio-8081-exec-3] c.m.u.controller.Controller              : User found at ID: 1
+2023-08-24T17:43:40.127+05:30  INFO 19224 --- [http-nio-8081-exec-3] c.m.u.service.UserServiceImplementation  : [{ratingId=1, userId=1, hotelId=1, rating=4, feedback=Good Interiors}]
+2023-08-24T17:43:44.371+05:30  INFO 19224 --- [http-nio-8081-exec-4] c.m.u.controller.Controller              : User found at ID: 2
+2023-08-24T17:43:44.384+05:30  INFO 19224 --- [http-nio-8081-exec-4] c.m.u.service.UserServiceImplementation  : []
+2023-08-24T17:43:48.134+05:30  INFO 19224 --- [http-nio-8081-exec-5] c.m.u.controller.Controller              : User found at ID: 4
+2023-08-24T17:43:48.154+05:30  INFO 19224 --- [http-nio-8081-exec-5] c.m.u.service.UserServiceImplementation  : [{ratingId=2, userId=4, hotelId=2, rating=2, feedback=Unclean Rooms}]
+2023-08-24T17:44:39.221+05:30  INFO 19224 --- [http-nio-8081-exec-6] c.m.u.controller.Controller              : User found at ID: 2
+2023-08-24T17:44:39.242+05:30  INFO 19224 --- [http-nio-8081-exec-6] c.m.u.service.UserServiceImplementation  : [{ratingId=5, userId=2, hotelId=1, rating=5, feedback=Great experience}]
+2023-08-24T17:53:05.656+05:30  INFO 19224 --- [http-nio-8081-exec-8] c.m.u.controller.Controller              : User found at ID: 5
