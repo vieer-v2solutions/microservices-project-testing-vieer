@@ -10,9 +10,8 @@ public interface HotelService {
     public List<Hotel> getAllHotel();
 
     //Get by id
-    public Hotel getHotelById(String userId);
+    public Hotel getHotelById(String hotelId);
 
     //Create a user
     public Hotel saveHotel(Hotel hotel);
 }
-//

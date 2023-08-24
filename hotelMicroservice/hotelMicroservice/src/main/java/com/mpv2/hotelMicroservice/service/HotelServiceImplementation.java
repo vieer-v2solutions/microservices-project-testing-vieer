@@ -28,5 +28,5 @@ public class HotelServiceImplementation implements HotelService {
     public Hotel saveHotel(Hotel hotel) {
         return hotelRepository.save(hotel);
     }
-    //
+
 }
