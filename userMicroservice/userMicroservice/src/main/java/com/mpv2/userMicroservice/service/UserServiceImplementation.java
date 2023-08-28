@@ -1,14 +1,18 @@
 package com.mpv2.userMicroservice.service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.mpv2.userMicroservice.entity.Hotel;
 import com.mpv2.userMicroservice.entity.Ratings;
 import com.mpv2.userMicroservice.entity.User;
 import com.mpv2.userMicroservice.exception.ResourceNotFoundException;
@@ -40,10 +44,22 @@ public class UserServiceImplementation implements UserService {
     public User getUser(String userId) {
         User user = userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User Not found on server with id: " + userId));
 
-        ArrayList<Ratings> ratingsOfUser = restTemplate.getForObject("http://localhost:8083/ratings/users/" + user.getUserId() , ArrayList.class);
-        logger.info("{}", ratingsOfUser);
+        Ratings[] ratingsOfUser = restTemplate.getForObject("http://localhost:8083/ratings/users/" + user.getUserId() , Ratings[].class);
+        List<Ratings> ratings = Arrays.stream(ratingsOfUser).toList();
+       
 
-        user.setRatings(ratingsOfUser);
+
+        List<Ratings> ratingList = ratings.stream().map(rating -> {
+            ResponseEntity<Hotel> forEntity = restTemplate.getForEntity("http://localhost:8082/hotels/" + rating.getHotelId(), Hotel.class);
+            Hotel hotel = forEntity.getBody();
+
+            logger.info("Hotel details: " + hotel);
+            rating.setHotel(hotel);
+            return rating;
+        }).collect(Collectors.toList());
+
+        user.setRatings(ratingList);
+
         return user;
     }
 }
