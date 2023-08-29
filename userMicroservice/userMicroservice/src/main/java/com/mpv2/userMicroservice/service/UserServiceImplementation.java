@@ -1,6 +1,5 @@
 package com.mpv2.userMicroservice.service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,7 +16,6 @@ import com.mpv2.userMicroservice.entity.Ratings;
 import com.mpv2.userMicroservice.entity.User;
 import com.mpv2.userMicroservice.exception.ResourceNotFoundException;
 import com.mpv2.userMicroservice.repository.UserRepository;
-
 
 @Service
 public class UserServiceImplementation implements UserService {
@@ -40,17 +38,21 @@ public class UserServiceImplementation implements UserService {
         return userRepository.findAll();
     }
 
+    // Get user by Id, also retrieves the ratings and hotel name
     @Override
     public User getUser(String userId) {
-        User user = userRepository.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User Not found on server with id: " + userId));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User Not found on server with id: " + userId));
 
-        Ratings[] ratingsOfUser = restTemplate.getForObject("http://localhost:8083/ratings/users/" + user.getUserId() , Ratings[].class);
+        // Retrieving the user's hotel ratings
+        Ratings[] ratingsOfUser = restTemplate.getForObject("http://RATING-SERVICE/ratings/users/" + user.getUserId(),
+                Ratings[].class);
         List<Ratings> ratings = Arrays.stream(ratingsOfUser).toList();
-       
 
-
+        // Retrieving the hotel details
         List<Ratings> ratingList = ratings.stream().map(rating -> {
-            ResponseEntity<Hotel> forEntity = restTemplate.getForEntity("http://localhost:8082/hotels/" + rating.getHotelId(), Hotel.class);
+            ResponseEntity<Hotel> forEntity = restTemplate
+                    .getForEntity("http://HOTEL-SERVICE/hotels/" + rating.getHotelId(), Hotel.class);
             Hotel hotel = forEntity.getBody();
 
             logger.info("Hotel details: " + hotel);
@@ -64,4 +66,5 @@ public class UserServiceImplementation implements UserService {
     }
 }
 
-//orElseThrow(()-> new ResourceNotFoundException("User Not found on server with id: " + userId)
+// orElseThrow(()-> new ResourceNotFoundException("User Not found on server with
+// id: " + userId)
