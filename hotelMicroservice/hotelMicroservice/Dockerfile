@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the executable jar file from the target directory to the container's /app directory
-COPY target/health-check-demo-0.0.1-SNAPSHOT.jar app.jar
+COPY target/hotelMicroservice-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 8082
 
 # Run the jar file when the container starts
 CMD ["java", "-jar", "app.jar"]
