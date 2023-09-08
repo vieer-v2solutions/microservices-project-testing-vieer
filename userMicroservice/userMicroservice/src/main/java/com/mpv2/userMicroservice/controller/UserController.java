@@ -17,10 +17,10 @@ import com.mpv2.userMicroservice.service.UserService;
 
 @RestController
 @RequestMapping("/users")
-public class Controller {
+public class UserController {
     
     //Logger Statement
-    private static final Logger LOGGER = LoggerFactory.getLogger(Controller.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     UserService userService;
