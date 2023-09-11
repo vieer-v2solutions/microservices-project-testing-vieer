@@ -11,7 +11,7 @@ public class CorsConfig {
     @Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfig = new CorsConfiguration();
-		corsConfig.addAllowedOrigin("http://IP-ADDRESS:3000"); // apna ip-address:3000 dalna, localhost pe chalta nahi hai kabhi kabar
+		corsConfig.addAllowedOrigin("http://192.168.0.103:8080"); // apna ip-address:3000 dalna, localhost pe chalta nahi hai kabhi kabar
 		corsConfig.addAllowedHeader("*");
 		corsConfig.addAllowedMethod("*");
 

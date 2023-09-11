@@ -44,6 +44,11 @@ public class UserController {
         LOGGER.info("User found at ID: " + userId);
         return userService.getUser(userId);
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "test page, v2 check...........";
+    }
 }
 
 

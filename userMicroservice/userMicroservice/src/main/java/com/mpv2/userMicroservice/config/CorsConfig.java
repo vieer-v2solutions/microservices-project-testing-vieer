@@ -11,7 +11,7 @@ public class CorsConfig {
     @Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfig = new CorsConfiguration();
-		corsConfig.addAllowedOrigin("http://IP-ADDRESS:3000"); // http://d1mhiwxsb4ji6x.cloudfront.net/ 172.16.12.109
+		corsConfig.addAllowedOrigin("http://frontend-vue-app.s3-website.ap-south-1.amazonaws.com"); // http://frontend-vue-app.s3-website.ap-south-1.amazonaws.com 172.16.12.109
 		corsConfig.addAllowedHeader("*");
 		corsConfig.addAllowedMethod("*");
 
