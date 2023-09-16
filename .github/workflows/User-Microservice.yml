@@ -2,7 +2,7 @@ name: User-Microservice
 on:
   push:
     branches:
-      - Hotel-Microservice
+      - User-Microservice
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,6 +21,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '20'
+          distribution: 'adopt'
+          architecture: 'x64'
+          check-latest: false
 
       - name: Build JAR file
         run: |
@@ -32,4 +35,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: '${{ secrets.DOCKERHUB_USERNAME }}/poc:user-microservice:$(date +%s)'
+          tags: '${{ secrets.DOCKERHUB_USERNAME }}/poc:User-Microservice-${{ github.run_id }}'
