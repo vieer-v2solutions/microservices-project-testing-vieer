@@ -35,4 +35,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: '${{ secrets.DOCKERHUB_USERNAME }}/poc:user-microservice-${{ github.run_id }}'
+          tags: '${{ secrets.DOCKERHUB_USERNAME }}/poc:Hotel-Microservice-${{ github.run_id }}'
