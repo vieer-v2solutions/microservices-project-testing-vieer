@@ -21,6 +21,9 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '20'
+          distribution: 'adopt'
+          architecture: 'x64'
+          check-latest: false
 
       - name: Build JAR file
         run: |
