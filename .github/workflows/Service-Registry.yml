@@ -1,4 +1,4 @@
-name: Service-Registry
+name: service-Registry
 on:
   push:
     branches:
