@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - Rating-Microservice
+      
 jobs:
   build:
     runs-on: ubuntu-latest
