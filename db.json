@@ -1,0 +1,73 @@
+{
+    "users": [
+      {
+        "userId": "1",
+        "name": "Manpreet",
+        "email": "manpreet@gmail.com",
+        "ratings": []
+      },
+      {
+        "userId": "2",
+        "name": "Jayesh",
+        "email": "jayesh@gmail.com",
+        "ratings": []
+      },
+      {
+        "userId": "3",
+        "name": "Suvam",
+        "email": "suvam@gmail.com",
+        "ratings": []
+      }
+    ],
+    "hotels": [
+      {
+        "hotelId": "1",
+        "name": "Oberoi Hotel",
+        "location": "MArine Lines",
+        "star": "5"
+      },
+      {
+        "hotelId": "2",
+        "name": "Taj Hotel",
+        "location": "Mumbai",
+        "star": "5"
+      },
+      {
+        "hotelId": "3",
+        "name": "Mariott",
+        "location": "Delhi",
+        "star": "4"
+      }
+    ],
+    "ratings": [
+      {
+        "ratingId": "1",
+        "userId": "1",
+        "hotelId": "1",
+        "rating": "3",
+        "feedback": "Great experience"
+      },
+      {
+        "ratingId": "2",
+        "userId": "1",
+        "hotelId": "2",
+        "rating": "2",
+        "feedback": "Buffet provided was not up to the mark"
+      },
+      {
+        "ratingId": "3",
+        "userId": "2",
+        "hotelId": "3",
+        "rating": "5",
+        "feedback": "Excellent staff, food, and service. Recommended"
+      },
+      {
+        "ratingId": "4",
+        "userId": "3",
+        "hotelId": "1",
+        "rating": "3",
+        "feedback": "Rooms were tinier than expected, other than that the service was great"
+      }
+    ]
+  }
+  
