@@ -47,6 +47,10 @@ public class UserServiceImplementation implements UserService {
         // Retrieving the user's hotel ratings
         Ratings[] ratingsOfUser = restTemplate.getForObject("http://RATING-SERVICE/ratings/users/" + user.getUserId(),
                 Ratings[].class);
+
+        logger.info("Rating Module called");
+        logger.info("Ratings of user fetched: " + Arrays.toString(ratingsOfUser));
+
         List<Ratings> ratings = Arrays.stream(ratingsOfUser).toList();
 
         // Retrieving the hotel details
@@ -54,7 +58,7 @@ public class UserServiceImplementation implements UserService {
             ResponseEntity<Hotel> forEntity = restTemplate
                     .getForEntity("http://HOTEL-SERVICE/hotels/" + rating.getHotelId(), Hotel.class);
             Hotel hotel = forEntity.getBody();
-
+            logger.info("Hotel Module called");
             logger.info("Hotel details: " + hotel);
             rating.setHotel(hotel);
             return rating;
