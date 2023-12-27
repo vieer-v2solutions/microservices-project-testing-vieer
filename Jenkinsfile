@@ -4,11 +4,9 @@ pipeline {
         maven 'Maven3.9.1'
     }
     environment {
+        DOCKER_HOST = '${env.DOCKER_HOST}'
         SONAR_HOST_URL = 'http://44.210.111.48'
         SONAR_LOGIN = credentials('sonarqube')
-        SONAR_PROJECT_KEY = 'hotelMicroservice'
-        SONAR_PROJECT_NAME = 'hotelMicroservice'
-        SONAR_SCANNER_VERSION = '4.6.0.2311'
     }
     stages {
         stage('Checkout') {
@@ -33,10 +31,7 @@ pipeline {
                         sh """
                             mvn sonar:sonar \
                             -Dsonar.host.url=${SONAR_HOST_URL} \
-                            -Dsonar.login=${SONAR_LOGIN} \
-                            -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
-                            -Dsonar.projectName=${SONAR_PROJECT_NAME} \
-                            -Dsonar.scanner.version=${SONAR_SCANNER_VERSION}
+                            -Dsonar.login=${SONAR_LOGIN} 
                         """
                     }
                 }
