@@ -7,7 +7,9 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git branch: 'demo', url: 'https://github.com/vieer-v2solutions/microservices-project-testing-vieer.git'
+                checkout scmGit(
+                        branches: [[name: 'demo']],
+                        userRemoteConfigs: [[url: 'https://github.com/vieer-v2solutions/microservices-project-testing-vieer.git']])
             }
         }
         stage('Maven Build') {
