@@ -9,7 +9,7 @@ pipeline {
             steps {
                 git branch: 'demo', url: 'https://github.com/vieer-v2solutions/microservices-project-testing-vieer.git'
             }
-        }       
+        }
         stage('Maven Build') {
             steps {
                 sh 'java --version'
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Building Image') {
             steps {
-                sh 'docker ps'
+                sh 'docker build . -t test'
             }
         }
     }
